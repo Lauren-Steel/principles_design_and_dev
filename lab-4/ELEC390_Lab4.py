@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA              #q8 & q9
 from sklearn.manifold import TSNE                  #q8 & q9
 
 # Question 1
-dataset = pd.read_csv('heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[1:1026, 0:12]
 labels = dataset.iloc[0, 0:12]
 
@@ -25,7 +25,7 @@ plt.show()
 # Question 2 answered on word document.
 
 # Question 3
-dataset = pd.read_csv('heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[1:1026, 0:12]
 labels = dataset.iloc[0, 0:12]
 
@@ -39,7 +39,7 @@ fig.tight_layout()
 plt.show()
 
 # Question 4
-dataset = pd.read_csv('heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[1:1026, 0:12]
 labels = dataset.iloc[0, 0:12]
 fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
@@ -50,7 +50,7 @@ fig.tight_layout()
 plt.show()
 
 # Question 5
-dataset = pd.read_csv('heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[1:1026, 0:12]
 labels = dataset.iloc[0, 0:12]
 fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
@@ -60,7 +60,7 @@ fig.tight_layout()
 plt.show()
 
 #Question 6
-dataset = pd.read_csv('lab_04/heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[:, :-1]
 labels = dataset.iloc[:, -1]
 fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
@@ -73,7 +73,7 @@ plt.show()
 # Question 7 answered on word document.
 
 # Question 8
-dataset = pd.read_csv("lab_04/winequalityN.csv")
+dataset = pd.read_csv("lab-4/winequalityN.csv")
 sc = StandardScaler()
 
 for i in range(len(dataset['quality'])):

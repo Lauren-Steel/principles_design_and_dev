@@ -17,7 +17,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.metrics import roc_curve, roc_auc_score
 
 # reading the dataset
-dataset = pd.read_csv("winequalityN-lab6.csv")
+dataset = pd.read_csv("lab-6/winequalityN-lab6.csv")
 sc = StandardScaler()
 
 # Convert quality column to binary classifiers

@@ -6,7 +6,7 @@ from sklearn.decomposition import PCA              #q8 & q9
 from sklearn.manifold import TSNE                  #q8 & q9
 
 # Question 8
-dataset = pd.read_csv("lab_04/winequalityN.csv")
+dataset = pd.read_csv("lab-4/winequalityN.csv")
 sc = StandardScaler()
 
 for i in range(len(dataset['quality'])):

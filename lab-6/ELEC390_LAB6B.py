@@ -17,7 +17,7 @@ from sklearn.inspection import DecisionBoundaryDisplay
 from sklearn.decomposition import PCA
 
 # reading the dataset
-dataset = pd.read_csv("winequalityN-lab6.csv")
+dataset = pd.read_csv("lab-6/winequalityN-lab6.csv")
 
 # Convert quality column to binary classifiers
 dataset['quality'] = dataset['quality'].apply(lambda x: 1 if x >= 6 else 0)

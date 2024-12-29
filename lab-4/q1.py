@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Question 1
-dataset = pd.read_csv('heart.csv')
+dataset = pd.read_csv('lab-4/heart.csv')
 data = dataset.iloc[1:1026, 0:12]
 labels = dataset.iloc[0, 0:12]
 
