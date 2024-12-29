@@ -1,0 +1,98 @@
+
+# ELEC 390 Lab 1
+# Lauren Steel (20218337)
+# Saman Saeidi (20217992)
+# Nicholas Seegobin (20246787)
+# Zeerak Asim (20237955)
+
+# Question 1
+#import matplotlib.pyplot as plt
+#import pandas as pd
+#dataset = pd.read_csv('heart.csv')
+#data = dataset.iloc[1:1026, 0:12]
+#labels = dataset.iloc[0, 0:12]
+
+#fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
+#data.hist(ax=ax.flatten()[0:12])
+
+#fig.tight_layout()
+#plt.show()
+
+
+
+
+# Question 3
+#import matplotlib.pyplot as plt
+#import pandas as pd
+#dataset = pd.read_csv('heart.csv')
+#data = dataset.iloc[1:1026, 0:12]
+#labels = dataset.iloc[0, 0:12]
+
+#fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
+
+#for i in range(0, 12):
+#    ax.flatten()[i].hist(data.iloc[:,i])
+#    ax.flatten()[i].set_title(data.columns[i], fontsize=15)
+
+
+#fig.tight_layout()
+#plt.show()
+
+
+
+
+
+
+# Question 4
+#import matplotlib.pyplot as plt
+#import pandas as pd
+#dataset = pd.read_csv('heart.csv')
+#data = dataset.iloc[1:1026, 0:12]
+#labels = dataset.iloc[0, 0:12]
+#fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
+
+#data.plot(ax=ax.flatten()[0:12], kind='density', subplots=True, sharex=False)
+
+#fig.tight_layout()
+#plt.show()
+
+
+
+
+# Question 5
+#import matplotlib.pyplot as plt
+#import pandas as pd
+#dataset = pd.read_csv('heart.csv')
+#data = dataset.iloc[1:1026, 0:12]
+#labels = dataset.iloc[0, 0:12]
+#fig, ax = plt.subplots(ncols=4, nrows=4, figsize=(20,10))
+#data.plot(ax=ax.flatten()[0:12], kind='box', subplots=True, sharex=False, sharey=False)
+
+#fig.tight_layout()
+#plt.show()
+
+
+
+
+
+
+
+# Question 6
+import matplotlib.pyplot as plt
+import pandas as pd
+dataset = pd.read_csv('heart.csv')
+data = dataset.iloc[1:1026, 0:12]
+labels = dataset.iloc[0, 0:12]
+fig, ax = plt.subplots(ncols=13, nrows=13, figsize=(30,30))
+
+pd.plotting.scatter_matrix(data, ax=169)
+
+fig.tight_layout()
+plt.show()
+
+
+
+
+
+
+
